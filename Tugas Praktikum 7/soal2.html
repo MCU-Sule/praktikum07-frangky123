@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="author" content="2172036 Frangky Hernandez">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2</title>
+</head>
+<body>
+    <script>
+        let harga = prompt("Berapa harga belanjaan anda?");
+        let bayar = prompt("Berapa uang yang dibayar?");
+        let a = bayar-harga;
+        document.write("Harga belanjaan anda adalah Rp." + harga + "<br>");
+        document.write("Uang yang dibayarkan adalah Rp." + bayar + "<br><br>");
+        document.write("Kembalian anda adalah Rp." + a + "dengan rincian sebagai berikut: <br>")
+        if(a>=100000) {
+            let seratus = Math.floor (a/100000);
+            document.write("Uang 100000 sebanyak " + seratus + " lembar <br>")
+            a = a-(seratus*100000);
+        }
+        if(a>=50000) {
+            let lima = Math.floor (a/50000);
+            document.write("Uang 50000 sebanyak " + lima + " lembar <br>")
+            a = a-(lima*50000);
+        }
+        if(a>=20000) {
+            let duap = Math.floor (a/20000);
+            document.write("Uang 20000 sebanyak " + duap + " lembar <br>")
+            a = a-(dua*20000);
+        }
+        if(a>=10000) {
+            let sepuluh = Math.floor (a/10000);
+            document.write("Uang 10000 sebanyak " + sepuluh + " lembar <br>")
+            a = a-(sepuluh*10000);
+        }
+        if(a>=5000) {
+            let limaribu = Math.floor (a/5000);
+            document.write("Uang 5000 sebanyak " + limaribu + " lembar <br>")
+            a = a-(limaribu*5000);
+        }
+        if(a>=2000) {
+            let duar = Math.floor (a/2000);
+            document.write("Uang 2000 sebanyak " + duar + " lembar <br>")
+            a = a-(duar*2000);
+        }
+        if(a>=1000) {
+            let satu = Math.floor (a/1000);
+            document.write("Uang 1000 sebanyak " + satu + " lembar <br>")
+            a = a-(satu*1000);
+        }
+        if(a>=500) {
+            let limar = Math.floor (a/500);
+            document.write("Uang 500 sebanyak " + limar + " lembar <br>")
+            a = a-(limar*500);
+        }
+        if((a>0) && (a<500) ){
+            document.write("Sisa kembalian Rp." + a)
+        }
+    </script>
+</body>
+</html>

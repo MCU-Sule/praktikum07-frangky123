@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="author" content="2172036 Frangky Hernandez">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 3</title>
+</head>
+<body>
+    <script>
+        <style>
+        div{
+            margin: auto;
+        }
+        p{
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="balok">
+        <p id="kotak"></p>
+    </div>
+    <script>
+        let bil = prompt("Masukan sebuah bilangan (0-9)");
+        if(bil == 0 ){
+            document.getElementById("balok").style.backgroundColor="#6ed36e";
+            document.getElementById("balok").style.width="80px";
+            document.getElementById("balok").style.height="50px";
+            document.getElementById("balok").style.border="2px solid black";
+            document.getElementById("kotak").innerHTML="1";
+            document.getElementById("kotak").style.fontSize="10px"
+        }
+    </script>
+</body>
+</html>
